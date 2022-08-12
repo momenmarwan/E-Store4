@@ -47,11 +47,12 @@ let product0 = new Products("7734" ,"phone"  , "500" , "the kind of phone sumsun
 
 
 let productss = [product1 , product2 , product3 , product4 , product5 , product6 , product7 , product8 , product9 , product0]
+// let productss = []
 
-let arr = JSON.parse(localStorage.getItem("cart")) || [];
+let arr = JSON.parse(localStorage.getItem("new-cart")) || [];
 
 
-let productOfObjects =  localStorage.getItem("objects") || []
+// let productOfObjects =  localStorage.getItem("objects") || []
 
 
 

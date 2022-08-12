@@ -29,11 +29,12 @@ btn.addEventListener("click" , () => {
         count :  countInput1.childNodes[1].value,
         category :  categoryInput1.childNodes[1].value ,
     }
+    // let product0 = new Products(idInput1.childNodes[1].value ,titleInput1.childNodes[1].value,  PriceInput1.childNodes[1].value ,   descriptionInput1.childNodes[1].value, imgInput1.childNodes[1].value  ,countInput1.childNodes[1].value,  categoryInput1.childNodes[1].value)
 
-    console.log(objectProduct)``
-    productOfObjects.push(objectProduct)
-    console.log(productOfObjects)
-    localStorage.setItem("objects" , JSON.stringify(objectProduct))
+    // console.log(objectProduct)
+    // productss.push(objectProduct)
+    // console.log(productss)
+    // localStorage.setItem("object" , JSON.stringify(productss))
     
 })
 

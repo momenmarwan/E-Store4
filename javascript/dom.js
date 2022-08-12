@@ -2,7 +2,6 @@ const createHTMLElement = (element , className , id) =>{
     let el = document.createElement(element);
     el.className = className;
     el.id = id ;
-    // el.setAttribute("id" , id)
     return el ; 
 }
 const createHTMLInput = ( className , id , type) => {
