@@ -36,7 +36,7 @@ class Products {
 
 let product1 = new Products("7725" , "ipone" , "3000" , "iphone mobile" , "electirnk" , "/assets/images/ipone.jpg" , 20)
 let product2 = new Products("7726" , "sumsung" , "1200" , "sumsung mobile" , "electirnk" , "/assets/images/sumsung.jpg" , 21)
-let product3 = new Products("7727" , "labtop" , "3500" , "Asus Labtop " , "electirnk" , "/assets/images/labtop.jpg" , 15)
+let product3 = new Products("7727" , "LapTap" , "3500" , "Asus Labtop " , "electirnk" , "/assets/images/labtop.jpg" , 15)
 let product4 = new Products("7728" , "macpok" , "5000" , "Apple Labtop" , "electirnk" , "/assets/images/apple.jpg" , 11)
 let product5 = new Products("7729" , "desk" , "500" , "desk for work" , "electirnk" , "/assets/images/desk.jpg" , 24)
 let product6 = new Products("7730" , "carmara" , "2600" , "canon carmara" , "electirnk" , "/assets/images/carmara.jpg" , 18)
@@ -52,11 +52,6 @@ let arr = JSON.parse(localStorage.getItem("cart")) || [];
 
 
 let productOfObjects =  localStorage.getItem("objects") || []
-// 
-// 
-
-// 
-
 
 
 

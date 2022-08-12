@@ -3,11 +3,10 @@ const showProducts = (array) =>{
     for(let i = 0 ; i < array.length ; i++){
         card += `
     <div class="card" style="width: 18rem;">
-            <div class="img-area mb-4"><img alt="" class="img-fluid" src="${array[i].img}"></div>
             <div class="card-body">
             <h5 class="card-title">${array[i].title}</h5>
-            <p class="card-text">${array[i].Desctpation}</p>
-            <button  id = ${array[i].ID} class="btn btn-primary add-card">Add To Cart</button>
+            <p class="card-text">${array[i].description}</p>
+            <button  id = ${array[i].id} class="btn btn-primary add-card">Add To Cart</button>
             
     </div>
     </div>
@@ -22,23 +21,6 @@ const buttons = document.getElementsByClassName("add-card")
 
 
 
-
-// const addToCart = (array) =>{
-// for(let i = 0 ; i < array.length ; i++){
-//     array[i].addEventListener("click" , () =>{
-//         arr.push(array[i].id)
-//         // console.log(arr)
-//         window.localStorage.setItem("cart", JSON.stringify(arr));
-       
-//     })
-// }
-
-// }
-// addToCart(buttons)
-
-// buttons.array.forEach(element => {
-//     console.log(element.id)
-// });
 
 for(let i = 0 ; i < buttons.length ; i++){
     buttons[i].addEventListener("click" , () =>{
