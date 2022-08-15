@@ -2,7 +2,6 @@ const showCard = () =>{
     cart = ''
     let totalPrice = 0;
 for(let i = 0 ; i <arr.length ; i++){
-    // console.log(productss[i].id)
     cart +=`
     <div class="product">
                    <img src="${arr[i].id}" alt="">

@@ -2,16 +2,16 @@ const showProducts = (array) =>{
     let card = ''
     for(let i = 0 ; i < array.length ; i++){
         let obj = {
-            title : array[i].getTitle() ,
-            description : array[i].getDescription(),
-            price : array[i].getPrice()
+            title : array[i].title,
+            description : array[i].description,
+            price : array[i].price
         }
         card += `
     <div class="card" style="width: 18rem;">
             <div class="card-body">
-            <h5 class="card-title">${array[i].getTitle()}</h5>
-            <p class="card-text">${array[i].getDescription()}</p>
-            <button  id = ${array[i].getId()} title= ${JSON.stringify(obj)} class="btn btn-primary add-card">Add To Cart</button>
+            <h5 class="card-title">${array[i].id}</h5>
+            <p class="card-text">${array[i].title}</p>
+            <button  id = ${array[i].id} title= ${JSON.stringify(obj)} class="btn btn-primary add-card">Add To Cart</button>
             
     </div>
     </div>
@@ -20,7 +20,7 @@ const showProducts = (array) =>{
     }
 }
 
-showProducts(productss)
+showProducts(productOfObjects)
 
 const buttons = document.getElementsByClassName("add-card")
 

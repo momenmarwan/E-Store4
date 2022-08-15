@@ -24,19 +24,19 @@ btn.addEventListener("click" , () => {
         id : idInput1.childNodes[1].value,
         title :  titleInput1.childNodes[1].value,
         description : descriptionInput1.childNodes[1].value,
-        Price : PriceInput1.childNodes[1].value, 
+        price : PriceInput1.childNodes[1].value, 
         img :  imgInput1.childNodes[1].value,
         count :  countInput1.childNodes[1].value,
         category :  categoryInput1.childNodes[1].value ,
     }
-    // let product0 = new Products(idInput1.childNodes[1].value ,titleInput1.childNodes[1].value,  PriceInput1.childNodes[1].value ,   descriptionInput1.childNodes[1].value, imgInput1.childNodes[1].value  ,countInput1.childNodes[1].value,  categoryInput1.childNodes[1].value)
 
-    // console.log(objectProduct)
-    // productss.push(objectProduct)
-    // console.log(productss)
-    // localStorage.setItem("object" , JSON.stringify(productss))
-    
+    productOfObjects.push(objectProduct)
+    addToLocalStorage(productOfObjects) 
 })
+
+function addToLocalStorage (arrayOfProduct) {
+      window.localStorage.setItem("product" , JSON.stringify(arrayOfProduct))
+}
 
 
 
