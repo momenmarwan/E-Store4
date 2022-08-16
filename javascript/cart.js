@@ -2,14 +2,16 @@ const showCard = () =>{
     cart = ''
     let totalPrice = 0;
 for(let i = 0 ; i <arr.length ; i++){
+    let pro = JSON.parse(arr[i]);
+    console.log(JSON.parse(arr[i]))
     cart +=`
     <div class="product">
-                   <img src="${arr[i].id}" alt="">
+                   <img src="{arr[i].id}" alt="">
                    <div class="product-info">
-                       <h3 class="product-name">${arr[i].title}</h3>
-                       <h2 class="product-price">${arr[i].description}</h2>
+                       <h3 class="product-name">${pro.title}</h3>
+                       <h2 class="product-price">${pro.description}</h2>
                        <h2 class="product-offer">50%</h2>
-                       <p class="product-quantity">Qnt : <input value = "${arr[i].count}" name=""></p>
+                       <p class="product-quantity">Qnt : <input value = "{arr[i].count}" name=""></p>
                        <p class="product-remove">
                            <i class="fa fa-trash" aria-hidden="true"></i>
                            <button class="remove btn btn-danger" onclick=" deleteCard(${i})">Remove</button>

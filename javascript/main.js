@@ -52,7 +52,6 @@ let arr =  [];
 
 if(getProductFromLocalStorage("new-cart")){
     arr = getProductFromLocalStorage("new-cart")
-
 }
 
 
