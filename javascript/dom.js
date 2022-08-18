@@ -35,7 +35,7 @@ const createFormGroup  = (labelText) =>{
    return div
 }
 
-{/* <img src="..." class="card-img-top" alt="..."></img> */}
+
 const createHtmlCard = (id , title ,imageUrl, obj) =>{
     const div = createHTMLElement("div" , "card") ;
     div.setAttribute("style" , "width: 18rem;")

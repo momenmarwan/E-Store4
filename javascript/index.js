@@ -1,23 +1,3 @@
-// const showProducts = (array) =>{
-//     for(let i = 0 ; i < array.length ; i++){
-//         let obj = {
-//             id : array[i].id,
-//             title :  array[i].title,
-//             description : array[i].description,
-//             price : array[i].price, 
-//             img :  array[i].img,
-//             count :  array[i].count,
-//             category :  array[i].category,
-//         }
-//         let card =  createHtmlCard(array[i].id , array[i].title , JSON.stringify(obj)) ;
-//         document.getElementById("warpper").appendChild(card)
-        
-    
-//     }
-// }
-
-// showProducts(productOfObjects)
-
 const buttons = document.getElementsByClassName("add-card") ; 
 
 // buttons.array.forEach(element => {
