@@ -22,13 +22,33 @@ const createHTMLLabel = (labelText) => {
     label.innerHTML = labelText ;
     return label
 }
-
+const appendChildFromMe = (main , ...ele) =>{
+    ele.forEach((el) => main.appendChild(el))
+    return main
+ }
 
 const createFormGroup  = (labelText) =>{
    const div = createHTMLElement("div" , "form-group") ;
    const label = createHTMLLabel(labelText)
    const input = createHTMLInput("form-control" , labelText , "text") ;
-   div.appendChild(label);
-   div.appendChild(input)
+   appendChildFromMe(div , label , input)
    return div
+}
+
+{/* <img src="..." class="card-img-top" alt="..."></img> */}
+const createHtmlCard = (id , title ,imageUrl, obj) =>{
+    const div = createHTMLElement("div" , "card") ;
+    div.setAttribute("style" , "width: 18rem;")
+    const image = createHTMLElement("img" , "card-img-top");
+    image.setAttribute("src" , imageUrl)
+    const cardBody = createHTMLElement("div" , "card-body") ;
+    const h5 = createHTMLElement("h5" , "card-title") ;
+    h5.textContent = id
+    const p = createHTMLElement("p" , "card-text") ;
+    p.textContent = title
+    const btn = createHTMLElement("button" , "btn btn-primary add-card" , id)
+    btn.setAttribute("title" , obj)
+    appendChildFromMe( cardBody , h5 , p , btn) ;
+    appendChildFromMe(div ,image , cardBody)
+    return div
 }
