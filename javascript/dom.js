@@ -47,6 +47,7 @@ const createHtmlCard = (id , title ,imageUrl, obj) =>{
     const p = createHTMLElement("p" , "card-text") ;
     p.textContent = title
     const btn = createHTMLElement("button" , "btn btn-primary add-card" , id)
+    btn.textContent = "Add To Card"
     btn.setAttribute("title" , obj)
     appendChildFromMe( cardBody , h5 , p , btn) ;
     appendChildFromMe(div ,image , cardBody)
